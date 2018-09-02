@@ -6,13 +6,14 @@ A Repository dedicated to making CBMC fit for "standard" applications
 
 Simply:
 
-    cbmc-golf source-file.c
+    cat file-stored-input | cbmc-golf source-file.c
 
 or whatever you want to call the compilation result or the processed source file.  
 The tool  is also able to pass-through the `--unwind` parameter to CBMC via the `-u` flag.
 
 Note that `cbmc` needs to be in your `PATH`.
 
+Note that `file-stored-input` must contain exactly one line for each expected declaration and must only contain valid right-hand-side values for C source-file initialisation e.g. `1` or `{1,2,3}`.
 # How to build!?
 
 Simple:
