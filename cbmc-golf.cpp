@@ -1,10 +1,19 @@
+/*
+ *	cbmc-golf.cpp - a single-source file wrapper for golfing applications of CBMC
+ *	Copyright (C) 2018 DevJPM / SEJPM (cryptopotato@posteo.de)
+ *	Distributed under the MIT License.
+ *	For further information, see the enclosed file LICENSE.txt or
+ *	visit https://opensource.org/licenses/mit-license.html
+ */
+
+
 #include <string>
 #include <iostream>
 #include <fstream>
 #include <vector>
 #include <deque>
 #include <sstream>
-#include "ProgramOptions.hxx"
+#include "ProgramOptions/ProgramOptions.hxx"
 
 static inline bool stringContains(const std::string& container, const std::string& toBeContained);
 static std::pair<unsigned int,std::vector<std::string>> parseOptions(int argc, char** argv);
